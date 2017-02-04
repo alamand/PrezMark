@@ -19,7 +19,7 @@ public class Lecture4 {
     public static void main(String[] args) {
         Book b = new Book();
         b.getTitle(); //ok
-        // b.setTitle("Title"); //is this valid?
+        // b.setTitle("Title"); //is this also valid?
         
         ReferenceBook r = new ReferenceBook(); //default constructor for Book is called first, then constructor of ReferenceBook
         r.setTitle("ICT306"); //ok
