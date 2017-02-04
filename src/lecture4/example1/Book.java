@@ -14,7 +14,7 @@ public class Book { //superclass
     public String getTitle(){ return title;}
     
     public void borrow(){System.out.println("Can be borrowed");}
-    public void borrow(int i){} //overloading
+    private void borrow(int i){} //overloading
     public void borrow(int i, String j){} //overloading
-    //public String Borrow(int j){return "";} //is this valid?
+    //public String borrow(int j){return "";} //is this valid?
 }

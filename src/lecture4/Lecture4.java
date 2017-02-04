@@ -18,11 +18,12 @@ public class Lecture4 {
      */
     public static void main(String[] args) {
         Book b = new Book();
-        System.out.println(b.getTitle()); //ok
+        b.getTitle(); //ok
         // b.setTitle("Title"); //is this valid?
         
         ReferenceBook r = new ReferenceBook(); //default constructor for Book is called first, then constructor of ReferenceBook
         r.setTitle("ICT306"); //ok
+        //r.borrow(1); why is this not allowed?
         System.out.println(r.getTitle()); //ok
         
         Book br = new ReferenceBook(); //upcast, dynamic binding

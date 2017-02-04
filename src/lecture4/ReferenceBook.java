@@ -10,10 +10,10 @@ import lecture4.example1.*;
 public class ReferenceBook extends Book { //inheritance is-a relationship, subclass
     // ReferenceBook also has a title member variable and a getTitle method
     ReferenceBook(){}; //no default constructor is provided by Java
-    ReferenceBook(String str){super(); title = str;} //constructor with arguments
+    ReferenceBook(String str){this(); title = str;} //constructor with arguments, which calls the default constructor first
     
     void setTitle(String str) { //Books do not have setTitle
-        this.getTitle(); //can call superclass methods, demonstrates "this"
+        super.getTitle(); //can call superclass methods, demonstrates "super"
         title = str;
     }
      
